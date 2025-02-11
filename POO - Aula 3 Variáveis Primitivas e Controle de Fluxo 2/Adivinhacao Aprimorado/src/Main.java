@@ -7,7 +7,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int x = rand.nextInt(10);
-        System.out.println("Chuta um número entre 0 e 10");
+        System.out.println("Chuta um número entre 1 e 10");
         int y = sc.nextInt();
         while(y!=x){
             if(y>x){
