@@ -38,8 +38,8 @@ public class Main {
         Random rand = new Random();
         Scanner sc = new Scanner(System.in);
 
-        int x = rand.nextInt(11); // Garante um número entre 0 e 10
-        System.out.println("Chuta um número entre 0 e 10");
+        int x = rand.nextInt(11); // Garante um número entre 1 e 10
+        System.out.println("Chuta um número entre 1 e 10");
         int y = sc.nextInt();
         
         while(y != x) {
@@ -52,4 +52,4 @@ public class Main {
     }
 }
 ```
-Esse código gera um número aleatório de 0 à 10, pois o número informado na função foi 11
+Esse código gera um número aleatório de 1 à 10, pois o número informado na função foi 11
