@@ -1,4 +1,4 @@
-# Introdução a POO P.2
+# Introdução a POO PT.2
 ## Métodos
 * Para usar um método para mexer com os objetos, passamos os objetos como referência para os métodos
 ## UML(Unified Modeling Language):
