@@ -13,12 +13,12 @@ public class Main {
 
         k1.nome = "El Fuego";
         k1.piloto = p1;
-        k1.motor.cilindradas = "Rapidasso";
-        k1.motor.velocidadeMaxima = 350;
+        k1.motor.cilindradas = "150";
+        k1.motor.velocidadeMaxima = 150;
         k2.nome = "El Rayo";
         k2.piloto = p2;
-        k2.motor.cilindradas = "Rapidão";
-        k2.motor.velocidadeMaxima = 310;
+        k2.motor.cilindradas = "100";
+        k2.motor.velocidadeMaxima = 110;
 
         p2.soltaSuperPoder();
         k1.pular();
