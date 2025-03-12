@@ -9,15 +9,15 @@ public class Main {
         int x = rand.nextInt(2);//Gera um aleatório entre 0 e 1
         int y = rand.nextInt(2);//Gera um aleatório entre 0 e 1
 
-        Campos campos = new Campos();
+        Campos[][] campos = new Campos[2][2];
 
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 2; j++) {
-                campos.campo[i][j] = new Campos();
+                campos[i][j] = new Campos();
             }
         }
 
-        campos.campo[x][y].bomba = true;
+        campos[x][y].bomba = true;
 
         do{
             System.out.println("Digite o valor de x: ");
@@ -32,17 +32,21 @@ public class Main {
                 System.out.println("Valor invalido");
                 q = sc.nextInt();
             }
-            if(campos.campo[p][q].bomba){
-                System.out.println("Explosão tchacabum, com a dança do verão");
-                System.out.println("Perdeu!");
-                break;
+            if(!campos[p][q].visitado) {
+                if (campos[p][q].bomba) {
+                    System.out.println("Explosão tchacabum, com a dança do verão");
+                    System.out.println("Perdeu!");
+                    break;
+                } else {
+                    System.out.println("Se salvou, vamo de novo");
+                    campos[p][q].visitado = true;
+                }
+                tentativas++;
             }
             else{
-                System.out.println("Se salvou, vamo de novo");
-                campos.campo[p][q].visitado = true;
+                System.out.println("Já veio aqui bobão, fala outra casa");
             }
-            tentativas++;
-        }while(!campos.campo[x][y].visitado && tentativas<3);
+        }while(!campos[x][y].visitado && ((campos.length)*(campos[0].length)-1)>tentativas);
         if(tentativas==3){
             System.out.println("Tu ganhou");
         }
