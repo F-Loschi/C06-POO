@@ -15,6 +15,7 @@ Repositório contendo os materiais e exercícios das aulas de POO.
 | 7 | Arrays no Java | [Acessar Aula 7](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%207%20-%20Arrays%20no%20Java) |
 | 8 | Arrays no Java (Parte 2) | [Acessar Aula 8](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%208%20-%20Arrays%20no%20Java%20pt2) |
 | 10 | Verificação de Acesso | [Acessar Aula 10](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2010%20-%20Verifica%C3%A7%C3%A3o%20de%20Acesso) |
+| 11 | Construtores e Modificador Static | [Acessar Aula 11](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2011%20-%20Construtores%20e%20o%20Modificador%20Static) |
 
 ## Tecnologias Utilizadas
 - Java
