@@ -2,6 +2,12 @@
 
 Repositório contendo os materiais e exercícios das aulas de POO.
 
+## Projetos de POO
+
+| Projeto | Tópico | Link |
+|------|--------|------|
+| PCMania | Atividade Prática 1 | [Acessar Projeto](https://github.com/F-Loschi/C06-POO/tree/main/PCMania) |
+
 ## Índice das Aulas
 
 | Aula | Tópico | Link |
