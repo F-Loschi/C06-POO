@@ -22,11 +22,12 @@ Vou usar thread.sleep para dar uma imersão
 
  */
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         boolean terminou = false;//Variável para rodar o menu
         Scanner sc = new Scanner(System.in);
         String n;//Você é o nome da pessoa
         long m;//Você é o CPF
+        int cont=0, op1=0 , op2=0 , op3=0;
 
         //Setando os sistemas operacionais
         SistemaOperacional SO1 = new SistemaOperacional();
@@ -91,20 +92,25 @@ public class Main {
         MemoriaUSB M1 = new MemoriaUSB("Pen-drive", 16);
         MemoriaUSB M2 = new MemoriaUSB("Pen-drive", 32);
         MemoriaUSB M3 = new MemoriaUSB("HD Externo", 1000);
-        
+
         //Adicionando os computadores
-        Computador PC1 = new Computador(H1,SO1);
-        PC1.memoriaUSB = M1;
-        PC1.marca = "Apple";
-        PC1.preco = 601;
-        Computador PC2 = new Computador(H2,SO2);
-        PC2.memoriaUSB = M2;
-        PC2.marca = "Samsung";
-        PC2.preco = 1835;
-        Computador PC3 = new Computador(H3,SO3);
-        PC3.memoriaUSB = M3;
-        PC3.marca = "Dell";
-        PC3.preco = 6279;
+        Computador[] PC = {
+                new Computador(H1, SO1),
+                new Computador(H2, SO2),
+                new Computador(H3, SO3)
+        };
+
+        PC[0].addMemoriaUSB(M1);
+        PC[0].marca = "Apple";
+        PC[0].preco = 601;
+        
+        PC[1].addMemoriaUSB(M2);
+        PC[1].marca = "Samsung";
+        PC[1].preco = 1835;
+
+        PC[2].addMemoriaUSB(M3);
+        PC[2].marca = "Dell";
+        PC[2].preco = 6279;
 
         //Mostrando o menu inicial
         System.out.println("=====================================");
@@ -113,14 +119,16 @@ public class Main {
         //Entrando as infos do cliente
         System.out.println("Digite seu nome: ");
         n = sc.nextLine();
+        cliente.nome = n;
         System.out.println("Digite seu cpf: ");
         m = sc.nextLong();
+        cliente.cpf = m;
 
         while(!terminou) {
             int op;//Para o switch
             int oppc;//Para eu saber qual opção da promoção ele escolheu
             //Esses souts ficam fora, pois vão aparecer toda vez que uma opção terminar
-            System.out.println("Escolha uma das promoções abaixo");
+            System.out.println("Escolha uma das promoções abaixo:");
             System.out.println("1 - Mostrar promoções");
             System.out.println("2 - Coloque uma opção no seu carrinho");
             System.out.println("3 - Mostrar seu carrinho");
@@ -131,112 +139,74 @@ public class Main {
             switch (op) {
                 case 1:
                     System.out.println("Promoção 1: ");
-                    PC1.mostraInfo();
+                    PC[0].mostraInfo();
                     //Vou dar essa pausa de 5 segundos entre as opções para a pessoa poder ler
-                    try {
-                        Thread.sleep(5000); 
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+                    Thread.sleep(5000);
                     System.out.println("Promoção 2: ");
-                    PC2.mostraInfo();
-                    try {
-                        Thread.sleep(5000); 
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+                    PC[1].mostraInfo();
+                    Thread.sleep(5000);
                     System.out.println("Promoção 3: ");
-                    PC3.mostraInfo();
-                    try {
-                        Thread.sleep(5000); 
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+                    PC[2].mostraInfo();
+                    Thread.sleep(5000);
                     break;
                 case 2:
-                    System.out.println("Digite o número do item que deseja comprar: ");
+                    System.out.println("Digite o código do item que deseja comprar: ");
                     oppc = sc.nextInt();/*O oppc vai me falar qual opção a pessoa quer 
-                    para eu saber o que colocar no carrinho e adicionar no total dela,
-                    tanto em valor quanto em quantidade
+                    para eu saber o que colocar no carrinho e adicionar a quantidade e
+                    somar no contador
                     */
                     if (oppc == 1) {
-                        cliente.total += 601;
-                        cliente.op1+=1;
+                        cliente.computador[cont] = PC[0];
+                        cont++;
+                        op1++;
+                        System.out.println("O item foi adicionado com sucesso!\n");
                     }
                     else if(oppc == 2) {
-                        cliente.total += 1835;
-                        cliente.op2+=1;
+                        cliente.computador[cont] = PC[1];
+                        cont++;
+                        op2++;
+                        System.out.println("O item foi adicionado com sucesso!\n");
                     }
                     else if(oppc == 3) {
-                        cliente.total += 6279;
-                        cliente.op3+=1;
+                        cliente.computador[cont] = PC[2];
+                        cont++;
+                        op3++;
+                        System.out.println("O item foi adicionado com sucesso!\n");
                     }
                     else{
-                        System.out.println("Opção inválida!");
+                        System.out.println("Opção inválida, tente novamente.\n");
                     }
                     break;
                 case 3:
                     System.out.println("Somando sua compra: ");
-                    try {
-                        Thread.sleep(3000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+                    Thread.sleep(3000);
                     System.out.println("Você colocou no seu carrinho os seguintes itens: ");
-                    System.out.println(cliente.op1+"x Computador(es) da Promoção 1");
-                    System.out.println(cliente.op2+"x Computador(es) da Promoção 2");
-                    System.out.println(cliente.op3+"x Computador(es) da Promoção 3");
+                    System.out.println(op1+"x Computador(es) da Promoção 1");
+                    System.out.println(op2+"x Computador(es) da Promoção 2");
+                    System.out.println(op3+"x Computador(es) da Promoção 3");
                     System.out.println("Totalizando: ");
                     System.out.println("clic clic clic(barulho da calculadora)");
-                    try {
-                        Thread.sleep(3500); 
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    System.out.println("R$"+cliente.total+",00");
+                    Thread.sleep(3500);
+                    System.out.println("R$"+cliente.calculaTotalCompra());
                     break;
                 case 0:
                     System.out.println("Fechando sua compra: ");
                     System.out.println("clic clic clic(barulho do teclado)");
-                    try {
-                        Thread.sleep(3500); 
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    System.out.println("Ficou um total de R$"+cliente.total+",00. O pagamento será feito de que forma?");
+                    Thread.sleep(3500);
+                    System.out.println("Ficou um total de R$"+cliente.calculaTotalCompra()+". O pagamento será feito de que forma?");
                     System.out.println("O pagamento está sendo feito, por favor espere");
-                    try {
-                        Thread.sleep(800); 
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+                    Thread.sleep(800);
                     System.out.println("===============================================");
-                    try {
-                        Thread.sleep(1600); 
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+                    Thread.sleep(1600);
                     System.out.println("             Tela de loading                   ");
-                    try {
-                        Thread.sleep(2200); 
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+                    Thread.sleep(2200);
                     System.out.println();
-                    try {
-                        Thread.sleep(2200); 
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+                    Thread.sleep(2200);
                     System.out.println("O primeiro bug de computador foi um inseto de verdade! ");
                     System.out.println("Em 1947, engenheiros encontraram uma mariposa presa dentro do computador Harvard Mark II, causando uma falha");
                     System.out.println("Eles registraram o incidente como bug no diário de manutenção, popularizando o termo para erros de software.");
-                    try {
-                        Thread.sleep(6000); 
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
                     System.out.println("===============================================");
+                    Thread.sleep(6000);
                     System.out.println("Compra confirmada!");
                     System.out.println("Agradecemos por escolher a PCMania, volte sempre!");
                     terminou = true;
@@ -245,8 +215,6 @@ public class Main {
                     System.out.println("Digite uma opção válida!");
                 }
         }
-
-
-
+        sc.close();
     }
 }
