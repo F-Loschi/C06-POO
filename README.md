@@ -12,7 +12,7 @@ Repositório contendo os materiais e exercícios das aulas de POO.
 
 | Aula | Tópico | Link |
 |------|--------|------|
-| 1 | Introdução | [Acessar Aula 1](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%201) |
+| 1 | Introdução | [Acessar Aula 1](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2001) |
 | 2 | Tipos primitivos e controle de fluxo | [Acessar Aula 2](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%202%20-%20Tipos%20primitivos%20e%20controle%20de%20fluxo) |
 | 3 | Variáveis Primitivas e Controle de Fluxo | [Acessar Aula 3](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%203%20Vari%C3%A1veis%20Primitivas%20e%20Controle%20de%20Fluxo%202) |
 | 4 | Introdução a POO | [Acessar Aula 4](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%204%20-%20Introdu%C3%A7%C3%A3o%20a%20POO) |
