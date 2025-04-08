@@ -18,8 +18,8 @@ Repositório contendo os materiais e exercícios das aulas de POO.
 | 4 | Introdução a POO | [Acessar Aula 4](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2004%20-%20Introdu%C3%A7%C3%A3o%20a%20POO) |
 | 5 | Introdução a POO (Parte 2) | [Acessar Aula 5](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2005%20-%20Introdu%C3%A7%C3%A3o%20a%20POO%202) |
 | 6 | Exercícios: Jogador-Arma | [Acessar Aula 6](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2006%20-%20Exerc%C3%ADcios/Exercicio%20Jogador-Arma) |
-| 7 | Arrays no Java | [Acessar Aula 7](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%207%20-%20Arrays%20no%20Java) |
-| 8 | Arrays no Java (Parte 2) | [Acessar Aula 8](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%208%20-%20Arrays%20no%20Java%20pt2) |
+| 7 | Arrays no Java | [Acessar Aula 7](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2007%20-%20Arrays%20no%20Java) |
+| 8 | Arrays no Java (Parte 2) | [Acessar Aula 8](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2008%20-%20Arrays%20no%20Java%20pt2) |
 | 10 | Verificação de Acesso | [Acessar Aula 10](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2010%20-%20Verifica%C3%A7%C3%A3o%20de%20Acesso) |
 | 11 | Construtores e Modificador Static | [Acessar Aula 11](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2011%20-%20Construtores%20e%20o%20Modificador%20Static) |
 | 12 | Herança | [Acessar Aula 12](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2012%20-%20Heran%C3%A7a) |
