@@ -24,6 +24,8 @@ Repositório contendo os materiais e exercícios das aulas de POO.
 | 11 | Construtores e Modificador Static | [Acessar Aula 11](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2011%20-%20Construtores%20e%20o%20Modificador%20Static) |
 | 12 | Herança | [Acessar Aula 12](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2012%20-%20Heran%C3%A7a) |
 | 13 | Polimorfismo | [Acessar Aula 13](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2013%20-%20Polimorfismo) |
+| 14 | Classe Abstrata | [Acessar Aula 14](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2014%20-%20Classe%20Abstrata) |
+| 15 | Interface | [Acessar Aula 15](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2015%20-%20Interface) |
 
 ## Tecnologias Utilizadas
 - Java
