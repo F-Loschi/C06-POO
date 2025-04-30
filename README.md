@@ -27,6 +27,12 @@ Repositório contendo os materiais e exercícios das aulas de POO.
 | 14 | Classe Abstrata | [Acessar Aula 14](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2014%20-%20Classe%20Abstrata) |
 | 15 | Interface | [Acessar Aula 15](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2015%20-%20Interface) |
 
+## Preparação de Provas
+
+| Prova | Link |
+|-------|------|
+| PV1 | [Acessar](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Prepara%C3%A7%C3%A3o%20PV1) |
+
 ## Tecnologias Utilizadas
 - Java
 
