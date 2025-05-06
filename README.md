@@ -26,8 +26,8 @@ Repositório contendo os materiais e exercícios das aulas de POO.
 | 13 | Polimorfismo | [Acessar Aula 13](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2013%20-%20Polimorfismo) |
 | 14 | Classe Abstrata | [Acessar Aula 14](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2014%20-%20Classe%20Abstrata) |
 | 15 | Interface | [Acessar Aula 15](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2015%20-%20Interface) |
-| 16 | Coleções | [Acessar Aula 16]() |
-| 17 | Mais sobre Collections | [Acessar Aula 17]() |
+| 16 | Coleções | [Acessar Aula 16](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2016%20-%20Cole%C3%A7%C3%B5es) |
+| 17 | Mais sobre Collections | [Acessar Aula 17](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2017%20-%20Mais%20sobre%20Collections) |
 
 ## Preparação de Provas
 
