@@ -28,6 +28,7 @@ Repositório contendo os materiais e exercícios das aulas de POO.
 | 15 | Interface | [Acessar Aula 15](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2015%20-%20Interface) |
 | 16 | Coleções | [Acessar Aula 16](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2016%20-%20Cole%C3%A7%C3%B5es) |
 | 17 | Mais sobre Collections | [Acessar Aula 17](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2017%20-%20Mais%20sobre%20Collections) |
+| 18 | Exceções | [Acessar Aula 18](https://github.com/F-Loschi/C06-POO/tree/main/POO%20-%20Aula%2018%20-%20Exce%C3%A7%C3%B5es) |
 
 ## Preparação de Provas
 
