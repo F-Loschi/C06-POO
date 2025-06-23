@@ -17,7 +17,7 @@ listaDeString.add(1);//Não funciona, pois tenta adicionar um int em um list de 
 listaDeString.add("1");
 listaDeString.add("QualquerString");
 ```
-- Podemos também criar uma lista de tipos criado por nós mesmo, ou seja, classes e interfaces
+- Podemos também criar uma lista de tipos criado por nós mesmo, ou seja, classes
 - Java já possui, dentro do Collections, métodos estáticos para fazer os sorts que foi aprendido em Algoritmos II.
 ```java
 import java.util.ArrayList;
